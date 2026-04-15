@@ -4,8 +4,9 @@ using namespace std;
 int main()
 {
 
-    int arr[] = {5, -1, 2, -3, 7};
     int n = 5;
+
+    int arr[n] = {5, -1, 2, -3, 7};
     int currentSum = 0;
     int maxSum = arr[0];
     for (int i = 0; i < n; i++)
