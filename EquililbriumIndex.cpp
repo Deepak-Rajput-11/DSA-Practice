@@ -25,7 +25,7 @@
 //     return 0;
 // }
 
-//
+// Optimize Approach
 
 #include <iostream>
 using namespace std;
