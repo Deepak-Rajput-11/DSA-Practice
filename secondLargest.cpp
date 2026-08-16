@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
-    int arr[5] = {22, 34, 11, 55, 67};
+    int arr[5] = {-22, 34, 11, 55, 67};
     int largest = INT_MIN;
     int secondLarge = INT_MIN;
 
