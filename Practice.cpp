@@ -97,18 +97,78 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {16, 17, 4, 3, 5, 2};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     int maxRight = arr[n - 1];
+//     int arr1[n];
+//     int count = 0;
+
+//     arr1[count] = maxRight;
+//     count++;
+//     for (int i = n - 2; i >= 0; i--)
+//     {
+//         if (arr[i] > maxRight)
+//         {
+//             arr1[count] = arr[i];
+//             count++;
+//             maxRight = arr[i];
+//         }
+//     }
+//     for (int i = count - 1; i >= 0; i--)
+//     {
+//         cout << arr1[i] << " ";
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <climits>
+
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {7, 2, 9, 4, 9, 3};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     int largest = arr[0];
+//     int seclargest = INT_MIN;
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] > largest)
+//         {
+//             seclargest = largest;
+//             largest = arr[i];
+//         }
+//         if (arr[i] > seclargest && arr[i] < largest)
+//         {
+//             seclargest = arr[i];
+//         }
+//     }
+//     cout << seclargest;
+//     return 0;
+// }
+
 #include <iostream>
 using namespace std;
 int main()
 {
-    int arr[] = {16, 17, 4, 3, 5, 2};
+    int arr[] = {1, 2, 3, 2, 4, 1};
     int n = sizeof(arr) / sizeof(arr[0]);
-    for (int i = n - 1; i <= 0; i--)
+    int count = 0;
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] < arr[i - 1])
+        for (int j = i + 1; j < i; j++)
         {
-            cout << arr[i];
+            if (arr[i] == arr[j])
+            {
+                count++;
+                break;
+            }
         }
     }
+    cout << count;
     return 0;
 }
