@@ -13,7 +13,7 @@ int main()
     cout << endl;
     for (int i = 0; i < 10; i++)
     {
-        for (int j = 0; j < 10 - i; j++)
+        for (int j = 0; j < 9 - i; j++)
         {
             if (arr[j] == 0)
             {
