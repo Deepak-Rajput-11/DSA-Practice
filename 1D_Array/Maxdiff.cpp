@@ -18,6 +18,6 @@ int main()
             MaxDiff = arr[i] - smallest;
         }
     }
-    cout<<MaxDiff;
+    cout << MaxDiff;
     return 0;
 }
