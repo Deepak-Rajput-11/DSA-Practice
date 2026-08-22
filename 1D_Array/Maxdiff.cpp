@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int arr[] = {7, 1, 5, 3, 6, 4};
+    int arr[] = {7, 1, 5, -3, 6, 4};
     int n = sizeof(arr) / sizeof(arr[0]);
     int MaxDiff = 0;
     int smallest = arr[0];
@@ -18,6 +18,6 @@ int main()
             MaxDiff = arr[i] - smallest;
         }
     }
-    cout<<MaxDiff;
+    cout << MaxDiff;
     return 0;
 }
