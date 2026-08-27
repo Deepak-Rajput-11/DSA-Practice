@@ -29,19 +29,24 @@ int main()
         right--;
 
         // RIGHT -> LEFT
-        for (int j = right; j >= left; j--)
+        if (top <= bottom)
         {
-            cout << arr[bottom][j] << " ";
+            for (int j = right; j >= left; j--)
+            {
+                cout << arr[bottom][j] << " ";
+            }
+            bottom--;
         }
-        bottom--;
 
         // BOTTOM -> TOP
-
-        for (int i = bottom; i >= top; i--)
+        if (left <= right)
         {
-            cout << arr[i][left] << " ";
+            for (int i = bottom; i >= top; i--)
+            {
+                cout << arr[i][left] << " ";
+            }
+            left++;
         }
-        left++;
     }
 
     return 0;
