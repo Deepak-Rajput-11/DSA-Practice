@@ -12,6 +12,21 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         int element = arr[0][i];
+        bool alreadyChecked = false;
+
+        for (int k = 0; k < i; k++)
+        {
+            if (arr[0][k] == element)
+            {
+                alreadyChecked = true;
+                break;
+            }
+        }
+
+        if (alreadyChecked == true)
+        {
+            continue;
+        }
 
         bool common = true;
 
