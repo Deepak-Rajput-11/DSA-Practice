@@ -13,7 +13,14 @@ int main()
     {
         for (int j = 0; j < 3; j++)
         {
-            for (int row2 = 0; row2 < 3; row2++)
+            for (int col2 = j + 1; col2 < 3; col2++)
+            {
+                if (arr[i][j] + arr[i][col2] == target)
+                {
+                    cout << arr[i][j] << " " << arr[i][col2] << endl;
+                }
+            }
+            for (int row2 = i + 1; row2 < 3; row2++)
             {
                 for (int col2 = 0; col2 < 3; col2++)
                 {
