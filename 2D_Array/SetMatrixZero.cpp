@@ -18,10 +18,6 @@ int main()
                 zeroRow[i] = 1;
                 zeroCol[j] = 1;
             }
-            if (zeroRow[i] == 1 || zeroCol[j] == 1)
-            {
-                arr[i][j] = 0;
-            }
         }
     }
     for (int i = 0; i < 3; i++)
