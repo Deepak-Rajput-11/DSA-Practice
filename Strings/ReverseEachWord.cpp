@@ -13,7 +13,7 @@ int main()
         {
             int end = i - 1;
 
-            // Reverse from start to end
+          
             while (start < end)
             {
                 swap(str[start], str[end]);
@@ -21,7 +21,7 @@ int main()
                 end--;
             }
 
-            // start should now move to beginning of next word
+           
             start = i + 1;
         }
         }
