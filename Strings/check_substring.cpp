@@ -1,13 +1,17 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
     string str = "datastructures";
     string sub = "structure";
 
-    for (int i = 0; i < sub.length(); i++)
+    bool found = false;
+
+    for (int i = 0; i <= str.length() - sub.length(); i++)
     {
         bool match = true;
+
         for (int j = 0; j < sub.length(); j++)
         {
             if (str[i + j] != sub[j])
@@ -16,15 +20,21 @@ int main()
                 break;
             }
         }
+
         if (match)
         {
-            cout << "Substring found";
+            found = true;
             break;
         }
     }
-    if (!match)
+
+    if (found)
     {
-        cout << "Sunstring not found";
+        cout << "Substring found";
+    }
+    else
+    {
+        cout << "Substring not found";
     }
 
     return 0;
