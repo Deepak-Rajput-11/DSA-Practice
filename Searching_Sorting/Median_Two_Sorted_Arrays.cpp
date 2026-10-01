@@ -4,10 +4,10 @@ using namespace std;
 int main()
 {
     int arr1[] = {1, 3};
-    int arr2[] = {2, 4};
+    int arr2[] = {2, 4, 5};
 
     int n1 = 2;
-    int n2 = 2;
+    int n2 = 3;
 
     int start = 0;
     int end = n1;
