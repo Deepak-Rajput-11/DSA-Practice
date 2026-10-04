@@ -17,6 +17,7 @@ int main()
 
         arr[j + 1] = temp; // insert temp into correct position
     }
+    
     // Print the new Array
 
     for (int i = 0; i < n; i++)
