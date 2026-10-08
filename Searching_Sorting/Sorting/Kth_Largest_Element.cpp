@@ -5,7 +5,6 @@ int main()
     int arr[] = {3, 2, 1, 5, 6, 4};
     int k = 2;
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << n;
 
     for (int i = 0; i < n - 1; i++)
     {

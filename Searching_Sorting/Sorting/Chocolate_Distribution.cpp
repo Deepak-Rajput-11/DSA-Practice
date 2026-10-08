@@ -27,7 +27,7 @@ int main()
         }
     }
 
-    for (int i = 0; i < n - m; i++)
+    for (int i = 0; i <= n - m; i++)
     {
 
         if (arr[i + m - 1] - arr[i] < min)
