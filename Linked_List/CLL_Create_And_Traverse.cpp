@@ -27,14 +27,20 @@ int main()
     fourth->next = fifth;
     fifth->next = head;
 
-    node *current = head;
-
-    do
+    if (head == nullptr)
     {
-        cout << current->data << " ";
-        current = current->next;
+        cout << "List is empty";
+    }
+    else
+    {
+        node *current = head;
 
-    } while (current != head);
+        do
+        {
+            cout << current->data << " ";
+            current = current->next;
 
+        } while (current != head);
+    }
     return 0;
 }
