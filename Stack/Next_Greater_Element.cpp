@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-    int arr[] = {4, 5, 2, 10, 8};
+    int arr[] = {4, 5, 9, 10, 8};
     const int n = sizeof(arr) / sizeof(arr[0]);
 
     stack<int> s;
